@@ -24,7 +24,8 @@ configuration: WebEngine
 
 # Custom build Configuration, i.e. Debug, Release, etc.
 build_script:
-  - 'C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\MSBuild\15.0\Bin\MSBuild.exe' %varProject% /maxcpucount
+  - set "exepath=C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\MSBuild\15.0\Bin\MSBuild.exe"
+  - %exepath% %varProject% /maxcpucount
 
 test_script:
   ## pass
