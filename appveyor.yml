@@ -2,7 +2,7 @@
 
 # Syntax for this file:
 # http://www.appveyor.com/docs/appveyor-yml
-
+image: Visual Studio 2017
 environment:
   matrix:
   #- image: Visual Studio 2015
